@@ -1,0 +1,31 @@
+{
+  "name": "turkishsiri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
+    "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
+    "start-server": "nodemon server -e html,js,scss --ignore public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "express": "^4.16.2",
+    "google-search-scraper": "0.0.3",
+    "google-translate": "^2.0.5",
+    "meteor-node-stubs": "^0.3.2",
+    "require": "^2.4.20",
+    "sendmail": "^1.2.0",
+    "socket.io": "^2.0.4",
+    "tureng": "^1.0.34"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-livereload-plugin": "^1.0.0"
+  }
+}
